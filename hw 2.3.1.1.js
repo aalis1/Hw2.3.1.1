@@ -1,4 +1,4 @@
-const groopPlayers = require("./testData.js");
+const groopPlayers = require("./testData");
 
 console.log(groopPlayers);
 
