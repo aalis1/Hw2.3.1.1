@@ -5,7 +5,7 @@ const players = [
     scorePoints: 4500,
   },
   {
-    id: 2,
+    id: 2
     name: "Petr",
     scorePoints: 3600,
   },
