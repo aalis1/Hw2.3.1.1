@@ -1,14 +1,25 @@
-const groopPlayers = require("./testData");
+const players = [
+  {
+    id: 1,
+    name: "Ivan",
+    scorePoints: 4500,
+  },
+  {
+    id: 2,
+    name: "Petr",
+    scorePoints: 3600,
+  },
+  {
+    id: 3,
+    name: "Vadim",
+    scorePoints: 3433,
+  },
+  {
+    id: 4,
+    name: "Olga",
+    scorePoints: 2356,
+  },
+];
 
-console.log(groopPlayers);
-
-// let command = {
-//   Ivan: 4500,
-//   Petr: 3600,
-//   Vadim: 3433,
-//   Olga: 2356,
-// };
-// for (elementKey in command) {
-//   console.log(...(elementKey + command[elementKey]));
-//   return Math.max({ ...(command[elementKey] + elementKey) });
-// }
+const bestPlayer = players.find((player) => player.scorePoints);
+console.log(bestPlayer);
