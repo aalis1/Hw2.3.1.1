@@ -21,22 +21,15 @@ const players = [
   },
 ];
 
-let score = [];
+let scores = [];
 
 players.forEach((player) => {
-  score.push(player.scorePoints);
+  scores.push(player.scorePoints);
 });
-console.log(score);
+console.log(scores);
 
 const bestPlayer = players.find(
-  (player) =>
-    player.scorePoints ===
-    Math.max(
-      players[0].scorePoints,
-      players[1].scorePoints,
-      players[2].scorePoints,
-      players[3].scorePoints
-    )
+  (player) => player.scorePoints === Math.max(...scores)
 );
 
 console.log(bestPlayer);
